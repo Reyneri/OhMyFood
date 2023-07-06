@@ -1,0 +1,21 @@
+*,
+::before,
+::after
+{
+box-sizing: border-box;
+/* border: 0.2px solid; */
+}
+body{
+    /* background-color: coral; */
+    margin: 0;
+}
+
+/* nav bar */
+
+header{
+  font-family: "Shrikhand",cursive;
+  text-align: center;
+  /* background-color:bisque; */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);  
+padding: 0.3rem;
+}
