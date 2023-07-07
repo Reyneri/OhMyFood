@@ -1,0 +1,123 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: coral; */
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+main .function {
+  padding: 1rem;
+}
+
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  /* background-color:bisque; */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 0.3rem;
+  position: relative;
+}
+
+/* nav bar */
+main .localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+/* Section Information Reservation   */
+.reservation {
+  background-color: #f6f6f6;
+  /* border: 0.2px solid blueviolet; */
+  text-align: center;
+  padding: 1rem;
+}
+.reservation h2 {
+  font-size: 1.5rem;
+}
+.reservation p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.reservation button {
+  box-sizing: content-box;
+  background: var(--button-gradient, linear-gradient(175deg, #9356dc 0%, #ff79da 100%));
+  width: 11.02rem;
+  height: 1.5rem;
+  padding: 0.813rem 1.172rem;
+  border-radius: 2rem;
+  margin-top: 1.688rem;
+  color: white;
+  border: 1px #9747ff;
+  transition: transform 400ms;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  /* text layout  */
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  font-family: "Roboto" sans-serif;
+}
+.reservation button:hover {
+  transform: scale(1.02);
+  opacity: 0.7;
+}
+
+.function {
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+.function h2 {
+  margin: 1rem 2rem 1rem;
+}
+.function ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+@media (min-width: 767px) {
+  .function ol {
+    flex-direction: row;
+  }
+}
+.function li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 20px;
+  height: 3.5rem;
+  box-shadow: 0px 4px 15px 0px #000;
+}
+.function li i.fas {
+  margin-right: 1rem;
+}
+.function li .pin {
+  position: absolute;
+  display: grid;
+  color: white;
+  background-color: #9356DC;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 50%;
+  bottom: 1rem;
+  left: -0.8rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // border: 0.2px solid;
+}
+
+body {
+    /* background-color: coral; */
+
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    
+}
+
+main .function {
+  
+    padding: 1rem;
+}

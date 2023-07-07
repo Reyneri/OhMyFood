@@ -1,0 +1,54 @@
+@import "../utils/box-shadows";
+
+.function {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    & h2 { 
+        margin: 1rem 2rem 1rem ;
+    }
+    & ol {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @media (min-width:767px) {
+            flex-direction: row;
+        }
+
+        list-style-type: none;
+    }
+
+    & li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        // border: 1px solid red;
+        flex-grow: 1;
+        border-radius: 20px;
+        height: 3.5rem;
+        @include shadow;
+
+        & i.fas {
+            //  color: brown;
+            margin-right: 1rem;
+
+        }
+
+        & .pin {
+            position: absolute;
+            display: grid;
+            color: white;
+            background-color: #9356DC;
+            width: 1.5rem;
+            height: 1.5rem;
+            flex-shrink: 0;
+            place-items: center;
+            border-radius: 50%;
+            bottom: 1rem;
+            left: -0.8rem;
+        }
+    }
+}
