@@ -10,6 +10,7 @@ body {
   /* background-color: coral; */
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  position: relative;
 }
 
 header {
@@ -182,6 +183,26 @@ main .localisation {
   padding: 0.75rem 0.8125rem;
   gap: 5px;
 }
+.menu .card__content .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#9356dc, magenta);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+.menu .card__content:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.09);
+}
+.menu .card__content .fa-regular {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.menu .card__content:hover .fa-regular {
+  opacity: 0;
+  transform: scale(0.7);
+}
 .menu .card i {
   position: absolute;
   font-size: 1.3125rem;
@@ -190,12 +211,19 @@ main .localisation {
 }
 
 footer {
+  min-height: 8.875rem;
   background: #353535;
   padding: 1.375rem 1.5625rem;
   color: white;
   text-decoration: none;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 1.375rem 1.875rem;
+  }
 }
 footer h2 {
   font-family: "Shrikhand", sans-serif;

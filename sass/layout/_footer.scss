@@ -1,13 +1,23 @@
 footer {
-
+    min-height: 8.875rem;
     background: $bg_drkgrey;
     padding: 1.375rem 1.5625rem;
     color: white;
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    
+    // text-align: justify;
 
-    & h2 {
+
+    @media (min-width: 768px) {
+
+        flex-direction: row-reverse;
+        padding: 1.375rem 1.875rem;
+    }
+    
+
+    h2 {
         font-family: "Shrikhand", sans-serif;
         font-weight: 500;
         font-size: 1.125rem;
@@ -15,7 +25,7 @@ footer {
 
     }
 
-    & p {
+    p {
         padding: 0.4rem;
         gap: 1rem;
     }
