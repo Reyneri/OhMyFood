@@ -12,10 +12,6 @@ body {
   font-size: 1rem;
 }
 
-main .function {
-  padding: 1rem;
-}
-
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -103,12 +99,15 @@ main .localisation {
   flex-grow: 1;
   border-radius: 20px;
   height: 3.5rem;
-  box-shadow: 0px 4px 15px 0px #000;
+  box-shadow: 5px 5px 21px -4px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 5px 5px 21px -4px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 5px 5px 21px -4px rgba(0, 0, 0, 0.28);
 }
 .function li i.fas {
   margin-right: 1rem;
 }
 .function li .pin {
+  margin: 0;
   position: absolute;
   display: grid;
   color: white;
@@ -120,4 +119,53 @@ main .localisation {
   border-radius: 50%;
   bottom: 1rem;
   left: -0.8rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 3.375rem 1.125rem 4.125rem 1.0625rem;
+  gap: 1.125rem;
+}
+.menu h2 {
+  margin-bottom: 1rem;
+}
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .menu__card {
+    flex-direction: row;
+  }
+}
+.menu .new {
+  border: 1px solid red;
+  position: relative;
+}
+.menu .card {
+  border: 1px solid rgb(245, 245, 245);
+  border-radius: 15px;
+  height: 15.6875rem;
+  width: 100%;
+  min-width: 340px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #ffffff;
+}
+.menu .card__image {
+  height: 70%;
+}
+.menu .card__image img {
+  border-radius: 15px 15px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.menu .card__content {
+  padding: 0.75rem 0.8125rem;
 }/*# sourceMappingURL=style.css.map */
