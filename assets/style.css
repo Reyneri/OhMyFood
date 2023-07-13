@@ -72,11 +72,11 @@ main .localisation {
 }
 
 .function {
-  padding: 1rem 2rem;
+  padding: 4rem 2rem;
   background-color: #fff;
 }
 .function h2 {
-  margin: 1rem 2rem 1rem;
+  margin-bottom: 2rem;
 }
 .function ol {
   display: flex;
@@ -143,11 +143,22 @@ main .localisation {
   }
 }
 .menu .new {
-  border: 1px solid red;
   position: relative;
 }
+.menu .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 2px;
+}
 .menu .card {
-  border: 1px solid rgb(245, 245, 245);
   border-radius: 15px;
   height: 15.6875rem;
   width: 100%;
@@ -167,5 +178,40 @@ main .localisation {
   height: 100%;
 }
 .menu .card__content {
+  position: relative;
   padding: 0.75rem 0.8125rem;
+  gap: 5px;
+}
+.menu .card i {
+  position: absolute;
+  font-size: 1.3125rem;
+  right: 1rem;
+  top: 30%;
+}
+
+footer {
+  background: #353535;
+  padding: 1.375rem 1.5625rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding-bottom: 0.6rem;
+}
+footer p {
+  padding: 0.4rem;
+  gap: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer i {
+  font-size: 1rem;
+  margin-right: 0.6rem;
 }/*# sourceMappingURL=style.css.map */
