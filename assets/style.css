@@ -6,11 +6,17 @@
   padding: 0;
 }
 
-body {
+html {
   /* background-color: coral; */
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -37,9 +43,11 @@ main .localisation {
 /* Section Information Reservation   */
 .reservation {
   background-color: #f6f6f6;
-  /* border: 0.2px solid blueviolet; */
+  border: 0.2px solid blueviolet;
   text-align: center;
   padding: 1rem;
+  position: relative;
+  flex-direction: column;
 }
 .reservation h2 {
   font-size: 1.5rem;
@@ -49,6 +57,7 @@ main .localisation {
   font-weight: 300;
 }
 .reservation button {
+  border: 1px #9747ff;
   box-sizing: content-box;
   background: var(--button-gradient, linear-gradient(175deg, #9356dc 0%, #ff79da 100%));
   width: 11.02rem;
@@ -57,7 +66,6 @@ main .localisation {
   border-radius: 2rem;
   margin-top: 1.688rem;
   color: white;
-  border: 1px #9747ff;
   transition: transform 400ms;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   /* text layout  */
@@ -133,10 +141,12 @@ main .localisation {
   margin-bottom: 1rem;
 }
 .menu__card {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
   width: 100%;
+  min-width: 600px;
 }
 @media (min-width: 768px) {
   .menu__card {
@@ -211,6 +221,7 @@ main .localisation {
 }
 
 footer {
+  width: 100%;
   min-height: 8.875rem;
   background: #353535;
   padding: 1.375rem 1.5625rem;
@@ -222,7 +233,6 @@ footer {
 @media (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
-    padding: 1.375rem 1.875rem;
   }
 }
 footer h2 {
@@ -242,4 +252,187 @@ footer a {
 footer i {
   font-size: 1rem;
   margin-right: 0.6rem;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 60vh;
+  -o-object-position: bottom;
+     object-position: bottom;
+  height: 100%;
+}
+.banner .cover-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.resto__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: -2rem;
+  padding: 1rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #F6F6F6;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 670px) {
+  .resto__main {
+    padding: 0 13rem 0rem 13rem;
+  }
+}
+.resto__main .title-restaurant {
+  position: relative;
+  font-family: "Shrikhand", "Cursive";
+  width: 100%;
+}
+
+.resto__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 20rem;
+}
+.resto__title .btn-heart {
+  height: 2rem;
+  width: 2rem;
+  border: 0 solid transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.resto__title .btn-heart .fa-heart {
+  position: absolute;
+  font-size: 1.5rem;
+}
+.resto__title i {
+  font-size: 2rem;
+}
+.resto__title .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#9356dc, magenta);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.resto__title:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.08);
+}
+.resto__title .fa-regular {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+.resto__title:hover .fa-regular {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.menu-resto {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  height: 50%;
+  border: 1px solid red;
+  width: 100%;
+  gap: 1rem;
+}
+.menu-resto__encart {
+  background-color: yellow;
+  border: 1px solid salmon;
+}
+.menu-resto .title-plat {
+  width: 275px;
+  height: 27px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.menu-resto .title-plat::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 1.1rem;
+  padding: 0rem 0rem 0rem 1rem;
+  gap: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+.menu-item__header {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem;
+}
+.menu-item__description {
+  font-size: 1.1875rem;
+}
+.menu-item__title {
+  margin: 0;
+  font-size: 1.3125rem;
+}
+.menu-item__price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.menu-item__confirmation {
+  background-color: brown;
+  display: flex;
+  margin-right: -4rem;
+  border-radius: 0 1rem 1rem 0;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+.menu-item__icon-wrap {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transition: menu-item__confirmation 1s;
+  transform: rotate(180deg);
+}
+.menu-item__icon {
+  color: #99e2d0;
+  transition-duration: 700ms, 1s;
+}
+.menu-item:hover .menu-item__confirmation {
+  margin-right: 0rem;
+  opacity: 1;
+}
+.menu-item:hover .menu-item__icon {
+  transform: rotate(-180deg);
 }/*# sourceMappingURL=style.css.map */

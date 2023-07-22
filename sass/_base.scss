@@ -7,13 +7,19 @@
     // border: 0.2px solid;
 }
 
-body {
+html {
     /* background-color: coral; */
-
-    
+    position: relative;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    position: relative;
-    
+
+
+
 }
 
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

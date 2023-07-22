@@ -1,4 +1,6 @@
 footer {
+    width: 100%;
+    
     min-height: 8.875rem;
     background: $bg_drkgrey;
     padding: 1.375rem 1.5625rem;
@@ -6,14 +8,12 @@ footer {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    
     // text-align: justify;
 
 
     @media (min-width: 768px) {
 
         flex-direction: row-reverse;
-        padding: 1.375rem 1.875rem;
     }
     
 
