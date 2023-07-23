@@ -1,3 +1,106 @@
+.loader {
+  font-family: "Shrikhand", "cursive";
+  z-index: 99;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  animation: fadeOut 2s ease-out 2.1s forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    z-index: -99;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .loader {
+    font-size: 5rem;
+  }
+}
+.letter {
+  color: rgba(56, 56, 56, 0.7411764706);
+  letter-spacing: 0.5rem;
+  animation: pop 2s cubic-bezier(0.8, 0.22, 0.44, 1.15) infinite;
+}
+
+@keyframes pop {
+  0%, 100% {
+    color: magenta;
+    text-shadow: 0 0 7px #ffffff;
+    transform: translateY(0);
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    color: #9356dc;
+    transform: translateY(-30px);
+    transform: translateY(-30px) scale(1.4);
+  }
+  60% {
+    color: #99E2D0;
+    transform: translateY(-15px);
+    transform: translateY(-15px) scale(1.1);
+  }
+  90% {
+    color: #ffffff;
+    text-shadow: none;
+    transform: translateY(0) scale(1);
+  }
+}
+.l1 {
+  animation-delay: 0s;
+}
+
+.l2 {
+  animation-delay: 0s;
+}
+
+.l3 {
+  animation-delay: 0.5s;
+}
+
+.l4 {
+  animation-delay: 0.5s;
+}
+
+.l5 {
+  animation-delay: 1s;
+}
+
+.l6 {
+  animation-delay: 1s;
+}
+
+.l7 {
+  animation-delay: 1s;
+}
+
+.l8 {
+  animation-delay: 1s;
+}
+
+.l9 {
+  animation-delay: 1.6s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
 *,
 ::before,
 ::after {
