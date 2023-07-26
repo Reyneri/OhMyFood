@@ -1,11 +1,29 @@
 @import "../utils/mixin";
 
+.pan-function{
+    display: flex;
+    align-self: center;
+    
+    flex-direction: column;
+    // max-width: 1080px;
+    width: 100%;
+    // left: 50%;
+}
+
 .function {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
     padding: 4rem 2rem;
     background-color: #fff;
-    & h2 { 
-        margin-bottom: 2rem ;
+    @media (min-width:767px) {
+        padding: 4rem 10rem;
     }
+
+    & h2 {
+        margin-bottom: 2rem;
+    }
+
     & ol {
         display: flex;
         flex-direction: column;
@@ -28,8 +46,9 @@
         // border: 1px solid red;
         flex-grow: 1;
         border-radius: 20px;
-        height: 3.5rem;
+        height: 4.5rem;
         @include shadow;
+        min-width: 12.8rem;
 
         & i.fas {
             //  color: brown;
@@ -48,7 +67,8 @@
             flex-shrink: 0;
             place-items: center;
             border-radius: 50%;
-            bottom: 1rem;
+            align-self: center;
+            // bottom: 50%rem;
             left: -0.8rem;
         }
     }

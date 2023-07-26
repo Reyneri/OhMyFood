@@ -2,11 +2,24 @@ main .localisation {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5vh;
     gap: 1rem;
     padding: 0.5rem;
-    background-color: #f3f3f3;
+    background-color: $bg_lgrey;
     text-align: center;
     font-size: 0.7rem;
 
-   
+
+    & h2 {
+        font-family: 'Roboto' sans-serif;
+        color: $bg_drkgrey;
+        font-weight: 500;
+
+    }
+
+    & i {
+        font-size: 1.01rem;
+
+    }
+
 }

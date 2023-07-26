@@ -1,42 +1,69 @@
-footer {
+.footer {
     width: 100%;
-    
-    min-height: 8.875rem;
+    min-height: 11.4vh;
     background: $bg_drkgrey;
     padding: 1.375rem 1.5625rem;
     color: white;
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    // text-align: justify;
-
+    line-height: 1.6875rem;
 
     @media (min-width: 768px) {
-
+        display: flex;
         flex-direction: row-reverse;
-    }
-    
+        padding-top: 4rem;
+        gap: 2rem;
 
-    h2 {
+        .fe2 {
+            order: 1;
+        }
+
+        .fe1 {
+            order: 2;
+        }
+
+    }
+
+    &__logo {
         font-family: "Shrikhand", sans-serif;
         font-weight: 500;
         font-size: 1.125rem;
         padding-bottom: 0.6rem;
-
     }
 
-    p {
-        padding: 0.4rem;
-        gap: 1rem;
+    &__engage {
+        p {
+            padding: 0.4rem;
+            gap: 1rem;
+            font-size: 1rem;
+            line-height: 1.3125rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        i {
+            font-size: 0.8rem;
+            margin-right: 0.6rem;
+        }
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+    @media (min-width:768px) {
+        &__slide {
+            object-position: center;
+            position: relative;
+            top: 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
-    i {
-        font-size: 1rem;
-        margin-right: 0.6rem;
+        &__engage {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+        }
     }
 }
