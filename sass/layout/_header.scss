@@ -10,7 +10,8 @@ header {
     height: 7.30vh;
 
     .back-to-index {
-        @include baseLayout;
+        position: absolute;
+
         width: 2rem;
         height: 2rem;
         top: 50%;

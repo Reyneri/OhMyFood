@@ -135,10 +135,7 @@ header {
   height: 7.3vh;
 }
 header .back-to-index {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  position: absolute;
   width: 2rem;
   height: 2rem;
   top: 50%;
