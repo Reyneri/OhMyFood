@@ -104,7 +104,7 @@
             &:hover .fa-solid {
                 opacity: 1;
                 transform: scale(1.1);
-                rotate: 360deg;
+                transform: rotate(360deg);
             }
 
             .fa-regular {
@@ -115,7 +115,7 @@
             &:hover .fa-regular {
                 opacity: 0;
                 transform: scale(1);
-                rotate: -360deg;
+                transform: rotate(-360deg);
             }
 
         }
