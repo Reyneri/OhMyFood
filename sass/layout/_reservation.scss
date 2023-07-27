@@ -1,46 +1,35 @@
+@import "../utils/mixin";
+
+
 .reservation {
-    background-color: #f6f6f6;
-    border: 0.2px solid blueviolet;
-    text-align: center;
-    padding: 1rem;
+    // border: solid 1px yellow;
+    @include flex-center;
     position: relative;
     flex-direction: column;
+    min-height: 100%;
+   
+    gap: 1rem;
+    padding: 2rem;
+    background-color: $bg_lgrey2;
+    text-align: center;
+   
 
-    & h2 {
-        // margin-top: 2rem;
+    &__title {
+
+        font-family: $Mainfont;
+        color: $bg_drkgrey;
+
+        font-weight: 700;
         font-size: 1.5rem;
     }
 
-    & p {
-        font-size: 1rem;
-        font-weight: 300;
+    &__description {
+        font-size: 1.01rem;
+        font-weight: 300
     }
 
-    & button {
-border: 1px #9747ff;
+    &__button {
+@include button-style;
+} 
 
-        box-sizing: content-box;
-        background: var(--button-gradient,
-                linear-gradient(175deg, #9356dc 0%, #ff79da 100%));
-        width: 11.02rem;
-        height: 1.5rem;
-        padding: 0.813rem 1.172rem;
-        border-radius: 2rem;
-        margin-top: 1.688rem;
-        color: white;
-        
-        transition: transform 400ms;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        /* text layout  */
-        font-size: 1rem;
-        font-weight: 500;
-        line-height: 1.5rem;
-        letter-spacing: 0em;
-        font-family: "Roboto" sans-serif;
-
-        &:hover {
-            transform: scale(1.02);
-            opacity: 0.7;
-        }
-    }
 }

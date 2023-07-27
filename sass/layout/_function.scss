@@ -1,19 +1,15 @@
 @import "../utils/mixin";
 
 .pan-function{
-    display: flex;
-    align-self: center;
-    
-    flex-direction: column;
+    @include flex-center-column;
     // max-width: 1080px;
     width: 100%;
     // left: 50%;
 }
 
 .function {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+
+    @include flex-center-column;
     padding: 4rem 2rem;
     background-color: #fff;
     @media (min-width:767px) {
@@ -25,8 +21,9 @@
     }
 
     & ol {
-        display: flex;
-        flex-direction: column;
+        @include flex-column; 
+
+        
         gap: 1.5rem;
 
         @media (min-width:767px) {
@@ -41,7 +38,7 @@
         justify-content: flex-start;
         align-items: center;
         position: relative;
-        background-color: #f6f6f6;
+        background-color:$bg_lgrey;
         padding: 1rem 2rem;
         // border: 1px solid red;
         flex-grow: 1;
@@ -60,8 +57,8 @@
             margin: 0;
             position: absolute;
             display: grid;
-            color: white;
-            background-color: #9356DC;
+            color: $bg_white;
+            background-color: $primary_1;
             width: 1.5rem;
             height: 1.5rem;
             flex-shrink: 0;

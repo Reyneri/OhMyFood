@@ -8,10 +8,10 @@ main .localisation {
     background-color: $bg_lgrey;
     text-align: center;
     font-size: 0.7rem;
-
+    box-sizing: border-box;
 
     & h2 {
-        font-family: 'Roboto' sans-serif;
+        font-family: $Mainfont;
         color: $bg_drkgrey;
         font-weight: 500;
 
