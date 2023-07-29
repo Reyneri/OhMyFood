@@ -63,3 +63,9 @@
         opacity: 0.7;
     }
 }
+
+@mixin text-overflow-ellipsis {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}

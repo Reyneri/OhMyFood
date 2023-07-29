@@ -1,5 +1,70 @@
 @import "../utils/mixin";
 
+// Animation pages restaurant
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.resto__title,
+.menu-resto {
+
+    .pan-item,
+    .menu-item,
+    button {
+        animation: slideInFromLeft 1.6s ease-out;
+        animation-fill-mode: both;
+        visibility: hidden; 
+    }
+}
+
+.resto__title {
+    animation-delay: 0.5s;
+}
+
+.menu-resto {
+    .delay-item1 {
+        animation-delay: 1.2s;
+    }
+    .delay-item2 {
+        animation-delay: 1.5s;
+    }
+
+    .delay-item3 {
+        animation-delay: 1.5s;  
+    }
+
+    .menu-item {
+        animation-delay: 1.5s;
+    }
+
+    button {
+        animation-delay: 2s;
+    }
+}
+
+.resto__title,
+.menu-resto {
+
+    .pan-item,
+    .menu-item,
+    button {
+        animation-play-state: running;
+        visibility: visible;
+    }
+}
+
+
+
+
+
 .banner {
     position: relative;
     overflow: hidden;
@@ -101,28 +166,31 @@
         }
     }
 
-    .fa-solid {
+    & .fa-solid {
         color: transparent;
+
         background-image: linear-gradient($primary_1, $secondary_2);
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
-        transition: all 600ms ease-in-out;
+        transition: all 700ms ease-in-out;
+        transform: scale(0) translateY(100%);
     }
 
     &:hover .fa-solid {
         opacity: 1;
-        animation: bounce 500ms;
+        transform: scale(1.1) translateY(0);
     }
 
-    .fa-regular {
+    & .fa-regular {
         opacity: 1;
-        transition: all 400ms ease-in-out;
+        transition: all 600ms ease-in-out;
+        transform: scale(1);
     }
 
     &:hover .fa-regular {
-        opacity: 0;
-        transform: scale(0.7);
+        opacity: 1;
+        transform: scale(1.02) scale(1);
     }
 
 
@@ -180,24 +248,23 @@
     border-radius: 1.1rem;
     padding: 0rem 0rem 0rem 1rem;
     gap: 1rem;
-    overflow: hidden;
+
     width: 100%;
 
-
+    overflow: hidden;
 
     &__header {
         // background-color: aqua;
         width: 100%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-
+        @include text-overflow-ellipsis;
         padding: 1rem;
     }
 
     &__description {
         font-size: 0.99rem;
         font-weight: 300;
+        @include text-overflow-ellipsis;
+
     }
 
     &__title {

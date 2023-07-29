@@ -262,6 +262,10 @@ main .localisation i {
 }
 .function li i.fas {
   margin-right: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.function li:hover i.fas {
+  color: #9356dc;
 }
 .function li .pin {
   margin: 0;
@@ -355,22 +359,21 @@ main .localisation i {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 600ms ease-in-out;
-  transform: scale(0);
+  transition: all 700ms ease-in-out;
+  transform: scale(0) translateY(100%);
 }
 .menu .card__content:hover .fa-solid {
   opacity: 1;
-  transform: scale(1.1);
-  transform: rotate(360deg);
+  transform: scale(1.1) translateY(0);
 }
 .menu .card__content .fa-regular {
   opacity: 1;
-  transition: all 500ms ease-in-out;
+  transition: all 600ms ease-in-out;
+  transform: scale(1);
 }
 .menu .card__content:hover .fa-regular {
-  opacity: 0;
-  transform: scale(1);
-  transform: rotate(-360deg);
+  opacity: 1;
+  transform: scale(1.02) scale(1);
 }
 .menu .card i {
   position: absolute;
@@ -438,6 +441,57 @@ main .localisation i {
     position: relative;
     flex-direction: row;
   }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.resto__title .pan-item,
+.resto__title .menu-item,
+.resto__title button,
+.menu-resto .pan-item,
+.menu-resto .menu-item,
+.menu-resto button {
+  animation: slideInFromLeft 1.6s ease-out;
+  animation-fill-mode: both;
+  visibility: hidden;
+}
+
+.resto__title {
+  animation-delay: 0.5s;
+}
+
+.menu-resto .delay-item1 {
+  animation-delay: 1.2s;
+}
+.menu-resto .delay-item2 {
+  animation-delay: 1.5s;
+}
+.menu-resto .delay-item3 {
+  animation-delay: 1.5s;
+}
+.menu-resto .menu-item {
+  animation-delay: 1.5s;
+}
+.menu-resto button {
+  animation-delay: 2s;
+}
+
+.resto__title .pan-item,
+.resto__title .menu-item,
+.resto__title button,
+.menu-resto .pan-item,
+.menu-resto .menu-item,
+.menu-resto button {
+  animation-play-state: running;
+  visibility: visible;
 }
 
 .banner {
@@ -524,19 +578,21 @@ main .localisation i {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 600ms ease-in-out;
+  transition: all 700ms ease-in-out;
+  transform: scale(0) translateY(100%);
 }
 .resto__title:hover .fa-solid {
   opacity: 1;
-  animation: bounce 500ms;
+  transform: scale(1.1) translateY(0);
 }
 .resto__title .fa-regular {
   opacity: 1;
-  transition: all 400ms ease-in-out;
+  transition: all 600ms ease-in-out;
+  transform: scale(1);
 }
 .resto__title:hover .fa-regular {
-  opacity: 0;
-  transform: scale(0.7);
+  opacity: 1;
+  transform: scale(1.02) scale(1);
 }
 
 .menu-resto {
@@ -580,19 +636,22 @@ main .localisation i {
   border-radius: 1.1rem;
   padding: 0rem 0rem 0rem 1rem;
   gap: 1rem;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
 }
 .menu-item__header {
   width: 100%;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   padding: 1rem;
 }
 .menu-item__description {
   font-size: 0.99rem;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-item__title {
   margin: 0;

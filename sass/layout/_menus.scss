@@ -97,25 +97,24 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 opacity: 0;
-                transition: all 600ms ease-in-out;
-                transform: scale(0);
+                transition: all 700ms ease-in-out;
+                transform: scale(0) translateY(100%);
             }
 
             &:hover .fa-solid {
                 opacity: 1;
-                transform: scale(1.1);
-                transform: rotate(360deg);
+                transform: scale(1.1) translateY(0); 
             }
 
             .fa-regular {
                 opacity: 1;
-                transition: all 500ms ease-in-out;
+                transition: all 600ms ease-in-out;
+                transform: scale(1);
             }
 
             &:hover .fa-regular {
-                opacity: 0;
-                transform: scale(1);
-                transform: rotate(-360deg);
+                opacity: 1;
+                transform: scale(1.02) scale(1);
             }
 
         }
