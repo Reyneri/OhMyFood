@@ -1,5 +1,5 @@
 .localisation {
-    z-index: -1;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,18 +13,19 @@
     position: relative;
 
     & input {
+        
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         font-family: $Mainfont;
-        color: $bg_drkgrey;
+        color: black;
         font-weight: 500;
         background: transparent;
         border: none;
         outline: none;
         height: auto;
-        font-size: 2 rem;
+        font-size: 1rem;
         padding-right: 2rem;
     }
 

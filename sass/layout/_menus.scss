@@ -1,6 +1,10 @@
 @import "../utils/mixin";
 
 .menu {
+
+    @include minwith;
+    
+    width: 100%;
     display: flex;
     flex-direction: column;
 

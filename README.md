@@ -24,7 +24,7 @@ Ohmyfood est une jeune startup qui vise à s'imposer sur le marché de la restau
 
 ## Utilisation
 
-Naviguez sur le site pour découvrir les menus des différents restaurants. Vous pouvez composer votre menu en sélectionnant les plats de votre choix.
+Naviguez sur le site pour découvrir les menus des différents restaurants. Vous pouvez composer votre menu en sélectionnant les plats de votre choix. en utlisant ce lien [https://reyneri.github.io/Ohmyfood]
 
 ## Développement
 

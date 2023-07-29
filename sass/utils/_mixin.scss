@@ -1,3 +1,7 @@
+@mixin minwith {
+    min-width: 371px;
+}
+
 @mixin baseLayout {
     display: flex;
     align-items: center;

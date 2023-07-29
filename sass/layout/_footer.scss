@@ -1,6 +1,7 @@
 @import "../utils/mixin";
 
 .footer {
+    min-width: 371px;
     width: 100%;
     min-height: 11.4vh;
     background: $bg_drkgrey;

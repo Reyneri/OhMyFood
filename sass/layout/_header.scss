@@ -1,7 +1,9 @@
 @import "../utils/mixin";
 
 header {
+    z-index: 1;
     @include baseLayout;
+    @include minwith;
     flex-direction: column;
     font-family: $Logofont;
     text-align: center;
@@ -14,9 +16,15 @@ header {
 
         width: 2rem;
         height: 2rem;
-        top: 50%;
-        left: 2rem;
+        top: 55%;
+        left: 0.5rem;
         transform: translateY(-50%);
         font-size: 1.2rem;
+
+
+        & a {
+            color: black;
+            text-decoration: none;
+        }
     }
 }
