@@ -226,10 +226,12 @@ header .back-to-index a {
   line-height: 1.5rem;
   letter-spacing: 0em;
   font-family: "Roboto", sans-serif;
+  opacity: 1;
 }
 .reservation__button:hover {
-  transform: scale(1.02);
-  opacity: 0.7;
+  opacity: 0.4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.5);
 }
 
 .pan-function {
@@ -750,9 +752,11 @@ header .back-to-index a {
   line-height: 1.5rem;
   letter-spacing: 0em;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 2em;
+  opacity: 1;
+  margin-bottom: 1.5rem;
 }
 .btn:hover {
-  transform: scale(1.02);
-  opacity: 0.7;
+  opacity: 0.4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.5);
 }/*# sourceMappingURL=style.css.map */
