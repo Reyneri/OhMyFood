@@ -1,4 +1,5 @@
-main .localisation {
+.localisation {
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,17 +10,28 @@ main .localisation {
     text-align: center;
     font-size: 0.7rem;
     box-sizing: border-box;
+    position: relative;
 
-    & h2 {
+    & input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         font-family: $Mainfont;
         color: $bg_drkgrey;
         font-weight: 500;
-
+        background: transparent;
+        border: none;
+        outline: none;
+        height: auto;
+        font-size: 2 rem;
+        padding-right: 2rem;
     }
 
-    & i {
+
+    & i{
+        position: relative;
         font-size: 1.01rem;
-
+        left: 2rem;
     }
-
 }
