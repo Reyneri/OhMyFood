@@ -19,7 +19,7 @@ Ohmyfood est une jeune startup qui vise à s'imposer sur le marché de la restau
 
 ## Installation
 
-1. Clonez le répertoire sur votre machine.
+1. Clonez le répertoire sur votre machine: [https://github.com/Reyneri/Ohmyfood.git]
 2. Ouvrez le fichier `index.html` dans votre navigateur.
 
 ## Utilisation
