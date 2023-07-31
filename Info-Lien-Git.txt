@@ -1,0 +1,13 @@
+Bonjour,
+
+Merci d'avoir téléchargé ce projet. Vous trouverez dans ce dossier zip le projet "Ohmyfood".
+
+Pour accéder à la version en ligne de ce projet, veuillez suivre ce lien : https://reyneri.github.io/Ohmyfood/
+
+Pour consulter le code source du projet, vous pouvez visiter le dépôt Github : https://github.com/reyneri/Ohmyfood
+
+Si vous avez des questions ou besoin de plus d'informations, n'hésitez pas à me contacter.
+
+Merci encore pour votre attention,
+
+Cordialement,
